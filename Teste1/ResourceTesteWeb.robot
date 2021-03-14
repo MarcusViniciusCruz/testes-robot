@@ -15,8 +15,8 @@ Acessar pagina home do site
     open browser     url=${URL}     browser= ${BROWSER}
     title should be    My Store
 
-#Fechar navegador
-#    close browser
+Fechar navegador
+    close browser
 
 Digitar o nome do produto "${text_search}" no campo de pesquisa
     wait until element is visible       locator=${INPUT_BOX}
