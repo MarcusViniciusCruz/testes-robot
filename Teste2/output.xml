@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on win32)" generated="20210315 01:07:13.919" rpa="false" schemaversion="2">
+<suite id="s1" name="TesteDesktop" source="C:\Users\Marcus Cruz\PycharmProjects\testes-robot\Teste2\TesteDesktop.robot">
+<test id="s1-t1" name="Windows Bloco de Notas">
+<kw name="Carrega diretório de imagens" library="ResourceTesteDesktop" type="SETUP">
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20210315 01:07:17.494" level="INFO">Params: [C:\Users\Marcus Cruz\PycharmProjects\testes-robot\Teste2\img]</msg>
+<status status="PASS" starttime="20210315 01:07:17.407" endtime="20210315 01:07:17.494"/>
+</kw>
+<status status="PASS" starttime="20210315 01:07:17.407" endtime="20210315 01:07:17.494"/>
+</kw>
+<kw name="Clicar no menu Iniciar do Windows" library="ResourceTesteDesktop">
+<kw name="Click" library="SikuliLibrary">
+<arg>windows_icon.png</arg>
+<doc>Click</doc>
+<msg timestamp="20210315 01:07:19.032" level="INFO">Params: [windows_icon.png]</msg>
+<msg timestamp="20210315 01:07:19.032" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1615781238297.png'/&gt;
+[log] CLICK on L[25,1058]@S(0) (552 msec)</msg>
+<status status="PASS" starttime="20210315 01:07:17.495" endtime="20210315 01:07:19.032"/>
+</kw>
+<status status="PASS" starttime="20210315 01:07:17.495" endtime="20210315 01:07:19.032"/>
+</kw>
+<kw name="Digitar “Bloco de notas” e pressionar a tecla ENTER" library="ResourceTesteDesktop" sourcename="Digitar “${TEXTO}” e pressionar a tecla ENTER">
+<kw name="Input Text" library="SikuliLibrary">
+<arg>campo_pesquisa.png</arg>
+<arg>${TEXTO}</arg>
+<doc>Input text
+ Image could be empty</doc>
+<msg timestamp="20210315 01:07:21.640" level="INFO">Params: [campo_pesquisa.png, Bloco de notas]
+Input Text:
+Bloco de notas</msg>
+<msg timestamp="20210315 01:07:21.640" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1615781239573.png'/&gt;
+[log] CLICK on L[193,1062]@S(0) (568 msec)
+[log]  TYPE "Bloco de notas"</msg>
+<status status="PASS" starttime="20210315 01:07:19.130" endtime="20210315 01:07:21.640"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20210315 01:07:21.702" level="INFO">Params: [ENTER]
+[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20210315 01:07:21.640" endtime="20210315 01:07:21.702"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>check_notepad.png</arg>
+<arg>timeout=2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20210315 01:07:23.709" level="INFO">Params: [check_notepad.png, 2]</msg>
+<msg timestamp="20210315 01:07:23.709" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1615781243701.png'/&gt;</msg>
+<status status="PASS" starttime="20210315 01:07:21.702" endtime="20210315 01:07:23.710"/>
+</kw>
+<status status="PASS" starttime="20210315 01:07:19.126" endtime="20210315 01:07:23.710"/>
+</kw>
+<kw name="Digitar “PWX Tecnologia” na área em branco" library="ResourceTesteDesktop" sourcename="Digitar “${DIG_TEXTO}” na área em branco">
+<kw name="Input Text" library="SikuliLibrary">
+<arg>campo_texto.png</arg>
+<arg>${DIG_TEXTO}</arg>
+<doc>Input text
+ Image could be empty</doc>
+<msg timestamp="20210315 01:07:25.698" level="INFO">Params: [campo_texto.png, PWX Tecnologia]
+Input Text:
+PWX Tecnologia</msg>
+<msg timestamp="20210315 01:07:25.698" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1615781243952.png'/&gt;
+[log] CLICK on L[1081,273]@S(0) (543 msec)
+[log]  TYPE "PWX Tecnologia"</msg>
+<status status="PASS" starttime="20210315 01:07:23.711" endtime="20210315 01:07:25.698"/>
+</kw>
+<status status="PASS" starttime="20210315 01:07:23.710" endtime="20210315 01:07:25.698"/>
+</kw>
+<kw name="Checar se o texto “PWX Tecnologia” está na escrito na tela" library="ResourceTesteDesktop" sourcename="Checar se o texto “${CHECK_TEXT}” está na escrito na tela">
+<kw name="Screen Should Contain" library="SikuliLibrary">
+<arg>pwx_tecnologia.png</arg>
+<doc>Screen should contain</doc>
+<msg timestamp="20210315 01:07:25.920" level="INFO">Params: [pwx_tecnologia.png]</msg>
+<msg timestamp="20210315 01:07:25.920" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1615781245918.png'/&gt;</msg>
+<status status="PASS" starttime="20210315 01:07:25.699" endtime="20210315 01:07:25.920"/>
+</kw>
+<status status="PASS" starttime="20210315 01:07:25.699" endtime="20210315 01:07:25.920"/>
+</kw>
+<kw name="Clicar no botão “X” para fechar e não salvar o arquivo" library="ResourceTesteDesktop">
+<kw name="Click" library="SikuliLibrary">
+<arg>x_notepad.png</arg>
+<doc>Click</doc>
+<msg timestamp="20210315 01:07:26.862" level="INFO">Params: [x_notepad.png]</msg>
+<msg timestamp="20210315 01:07:26.863" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1615781246119.png'/&gt;
+[log] CLICK on L[1422,220]@S(0) (546 msec)</msg>
+<status status="PASS" starttime="20210315 01:07:25.921" endtime="20210315 01:07:26.863"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>no_save.png</arg>
+<doc>Click</doc>
+<msg timestamp="20210315 01:07:28.200" level="INFO">Params: [no_save.png]</msg>
+<msg timestamp="20210315 01:07:28.200" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1615781247469.png'/&gt;
+[log] CLICK on L[972,530]@S(0) (550 msec)</msg>
+<status status="PASS" starttime="20210315 01:07:26.863" endtime="20210315 01:07:28.200"/>
+</kw>
+<status status="PASS" starttime="20210315 01:07:25.921" endtime="20210315 01:07:28.200"/>
+</kw>
+<status status="PASS" starttime="20210315 01:07:17.406" endtime="20210315 01:07:28.201"/>
+</test>
+<status status="PASS" starttime="20210315 01:07:13.921" endtime="20210315 01:07:28.203"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TesteDesktop">TesteDesktop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
