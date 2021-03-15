@@ -1,7 +1,9 @@
 *** Settings ***
 Resource        ResourceTesteWeb.robot
+
 Test Setup      Acessar pagina home do site
-Test Teardown   Fechar navegador
+#   Descomentar a linha abaixo para habilitar a opção de fechar página ao final do teste
+#Test Teardown   Fechar navegador
 
 *** Test Cases ***
 Pesquisar produtos existentes

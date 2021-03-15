@@ -9,14 +9,14 @@ ${SUBMMIT_SEARCH}   name=submit_search
 ${MOUSE_OVER}       class=sf-with-ul
 ${LINK}             xpath=//*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a
 
-
 *** Keywords ***
 Acessar pagina home do site
     open browser     url=${URL}     browser= ${BROWSER}
     title should be    My Store
 
-Fechar navegador
-    close browser
+#   Descomentar as linhas 18 e 19 para habilitar a opção de fechar página ao final do teste
+#Fechar navegador
+#    close browser
 
 Digitar o nome do produto "${text_search}" no campo de pesquisa
     wait until element is visible       locator=${INPUT_BOX}
