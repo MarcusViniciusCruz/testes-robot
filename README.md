@@ -1,5 +1,5 @@
 # testes-robot
-Testes com Robot Framework - PWX
+Testes com Robot Framework
 
 Ambos os testes estão separados em diferentes diretórios:
 
@@ -26,5 +26,3 @@ Os arquivos contidos no diretório Teste1 são:
 - Três arquivos gerados automaticamente após a execução do teste (log, report e output).
 - Documentação gerada pelo TesteDoc.
 - diretório //img: onde estão contidas as imagens necessárias para a execução dos testes.
-
-Os testes foram desenvolvidos utilizando a IDE PyCharm e auxiliados pelo pluguin Intellibot.
